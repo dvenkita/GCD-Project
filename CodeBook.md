@@ -126,13 +126,13 @@ Abbreviations used:
 5. Freq = Frequency  
 
 
-**Original variable name**```  ``` **Transformed variable name**  
+**Original variable name**```        ``` **Transformed variable name**  
 ```
 subject	                          Subject                      
 activty_labels	                  ActivityLabel              
 "tBodyAcc-mean()-X"               TimeBodyAcc-Mean-X           
 "tBodyAcc-mean()-Y"               TimeBodyAcc-Mean-Y           
-"tBodyAcc-mean()-Z"	          TimeBodyAcc-Mean-Z           
+"tBodyAcc-mean()-Z"               TimeBodyAcc-Mean-Z           
 "tBodyAcc-std()-X"            	  TimeBodyAcc-StdDev-X        
 "tBodyAcc-std()-Y"            	  TimeBodyAcc-StdDev-Y        
 "tBodyAcc-std()-Z"           	  TimeBodyAcc-StdDev-Z        
