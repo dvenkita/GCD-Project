@@ -1,6 +1,3 @@
----
-output: html_document
----
 # GCD-Project - CodeBook
 Repository for Getting and Cleaning Data course Project
 
@@ -105,26 +102,53 @@ tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
-** Data download and loading **
-1. The run_analysis.R script creates a directory named "Project" (if it does not 
+** Data download**
+1. The run_analysis.R script created a directory named "Project" (if it does not 
    exist already)
 2. The current working directory is changed to "Project"
 3. The UCI HAR data set is downloaded as a zip file and the data files are
    extracted into UCI HAR Dataset folder
-4. 
-
-**Data Processing**
 
 
-
+**Data loading & Processing**
+```
+1. Read the following data files      
+        a. activity_labels.txt -> activity_labels - factor  
+        b. features.txt -> features - factor  
+        c. X_train.txt -> X_train - data.frame  
+        d. y_train.txt -> Y_train - data.frame  
+        e. subject_train.txt -> subject_train - data.frame  
+        f. X_test.txt -> X_test - data.frame  
+        g. y_test.txt -> Y_test - data.frame  
+        h. subject_test.txt -> subject_test
+2. Extracted list of variables (extract_features - logical) that contains 
+   mean and standard deviation measurements   
+3. Applied variable labels (features) to X_train and X_test   
+4. Extracted variables containing mean and standard deviation measurements   
+   from X_train and X_test data frame (66/561 variables extracted)    
+5. Extracted activity labels, activity id and subject id from Y_train/Y_test and
+   subject_train/subject_test data    
+6. Combined mean & std measurement with activity ID, activity labels & subject   
+   ID for training (train_data) and test (test_data) data using cbind()
+7. Merged the modified training and test data sets using rbind() to create
+   combined_data data table
+8. Melted the combined_data data frame and cast (dcast) average (Mean) of each 
+   activity for each subject into tidy_data data frame
+9. Clean/modify the variable names of tidy_data to have descriptive names  
+10. Write the tidy_data into a text file labeled "UCI_HAR_tidy_data.txt"
+```
 **Variable Names - Description**  
 Abbreviations used:   
-1. Acc = Acceleration    
+1. Acc = Acceleration from accelerometer   
 2. StdDev = Standard Deviation  
-3. gyro = Gyroscope  
-4. mag = Magnitude  
+3. Gyro = Angular velocity vector from Gyroscope   
+4. Mag = Magnitude  
 5. Freq = Frequency  
 
+**Units**
+
+1. Acceleration (Acc) - standard gravity units 'g'    
+2. Angular velocity (Gyro) - radians/second
 
 **Original variable name**``` ``` | ```  ``` **Transformed variable name**  
 ```
