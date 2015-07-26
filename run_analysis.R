@@ -1,3 +1,12 @@
+## This R script "run_analysis.R" does the following:
+## 1. Downloads and reads the UCI HAR data set
+## 2. Extracts mean and standard deviation measurements for each variable
+## 3. Merges the training and the test data sets to create one data set
+## 4. Uses descriptive activity names to the activities in the data set
+## 5. Appropriately labels the data set with descriptive variable names
+## 6. Creates a second, independent tidy data set with the average of each
+##    variable for each activity and each subject.
+
 ## Load the required libraries
 library(data.table)
 library(reshape2)
