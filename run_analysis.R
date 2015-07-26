@@ -82,7 +82,7 @@ melted_data = melt(combined_data, id = id_labels, measure.vars = data_labels)
 tidy_data = dcast(melted_data, Subject + Activity_Label ~ variable, mean)
 
 ## Clean variable names and generate descriptive labels
-names(tidy_data) = gsub("\\(|\\)|‐|,", "", names(tidy_data))
+names(tidy_data) = gsub("\\(|\\)|‐|,|_", "", names(tidy_data))
 names(tidy_data) = gsub("^t", "Time", names(tidy_data))
 names(tidy_data) = gsub("^f", "Freq", names(tidy_data))
 names(tidy_data) = gsub("BodyBody", "Body", names(tidy_data))
