@@ -119,79 +119,79 @@ The complete list of variables of each feature vector is available in 'features.
 
 **Variable Names - Description**
 Abbreviations used:
-1. Acc = Acceleration
-2. StdDev = Standard Deviation
-3. gyro = Gyroscope
-4. mag = Magnitude
-5. Freq = Frequency
+1. Acc = Acceleration  
+2. StdDev = Standard Deviation  
+3. gyro = Gyroscope  
+4. mag = Magnitude  
+5. Freq = Frequency  
 
-**Original variable name**      **Transformed variable name**
-subject	                        Subject                    
-activty_labels	                ActivityLabel            
-"tBodyAcc-mean()-X"            	TimeBodyAcc-Mean-X         
-"tBodyAcc-mean()-Y"       	TimeBodyAcc-Mean-Y        
-"tBodyAcc-mean()-Z"	        TimeBodyAcc-Mean-Z         
-"tBodyAcc-std()-X"          	TimeBodyAcc-StdDev-X      
-"tBodyAcc-std()-Y"            	TimeBodyAcc-StdDev-Y      
-"tBodyAcc-std()-Z"           	TimeBodyAcc-StdDev-Z      
-"tGravityAcc-mean()-X"      	TimeGravityAcc-Mean-X      
-"tGravityAcc-mean()-Y"       	TimeGravityAcc-Mean-Y     
-"tGravityAcc-mean()-Z"        	TimeGravityAcc-Mean-Z     
-"tGravityAcc-std()-X"        	TimeGravityAcc-StdDev-X   
-"tGravityAcc-std()-Y"         	TimeGravityAcc-StdDev-Y    
-"tGravityAcc-std()-Z"        	TimeGravityAcc-StdDev-Z   
-"tBodyAccJerk-mean()-X"       	TimeBodyAccJerk-Mean-X     
-"tBodyAccJerk-mean()-Y"      	TimeBodyAccJerk-Mean-Y    
-"tBodyAccJerk-mean()-Z"      	TimeBodyAccJerk-Mean-Z     
-"tBodyAccJerk-std()-X"       	TimeBodyAccJerk-StdDev-X  
-"tBodyAccJerk-std()-Y"        	TimeBodyAccJerk-StdDev-Y   
-"tBodyAccJerk-std()-Z"       	TimeBodyAccJerk-StdDev-Z  
-"tBodyGyro-mean()-X"          	TimeBodyGyro-Mean-X       
-"tBodyGyro-mean()-Y"         	TimeBodyGyro-Mean-Y       
-"tBodyGyro-mean()-Z"          	TimeBodyGyro-Mean-Z        
-"tBodyGyro-std()-X"          	TimeBodyGyro-StdDev-X     
-"tBodyGyro-std()-Y"           	TimeBodyGyro-StdDev-Y      
-"tBodyGyro-std()-Z"          	TimeBodyGyro-StdDev-Z     
-"tBodyGyroJerk-mean()-X"      	TimeBodyGyroJerk-Mean-X    
-"tBodyGyroJerk-mean()-Y"     	TimeBodyGyroJerk-Mean-Y   
-"tBodyGyroJerk-mean()-Z"      	TimeBodyGyroJerk-Mean-Z   
-"tBodyGyroJerk-std()-X"      	TimeBodyGyroJerk-StdDev-X
-"tBodyGyroJerk-std()-Y"       	TimeBodyGyroJerk-StdDev-Y  
-"tBodyGyroJerk-std()-Z"      	TimeBodyGyroJerk-StdDev-Z
-"tBodyAccMag-mean()"          	TimeBodyAccMag-Mean        
-"tBodyAccMag-std()"          	TimeBodyAccMag-StdDev     
-"tGravityAccMag-mean()"      	TimeGravityAccMag-Mean     
-"tGravityAccMag-std()"       	TimeGravityAccMag-StdDev  
-"tBodyAccJerkMag-mean()"      	TimeBodyAccJerkMag-Mean    
-"tBodyAccJerkMag-std()"      	TimeBodyAccJerkMag-StdDev
-"tBodyGyroMag-mean()"         	TimeBodyGyroMag-Mean      
-"tBodyGyroMag-std()"         	TimeBodyGyroMag-StdDev    
-"tBodyGyroJerkMag-mean()"     	TimeBodyGyroJerkMag-Mean  
-"tBodyGyroJerkMag-std()"     	TimeBodyGyroJerkMag-StdDev
-"fBodyAcc-mean()-X"	        FreqBodyAcc-Mean-X         
-"fBodyAcc-mean()-Y"          	FreqBodyAcc-Mean-Y        
-"fBodyAcc-mean()-Z"           	FreqBodyAcc-Mean-Z         
-"fBodyAcc-std()-X"           	FreqBodyAcc-StdDev-X      
-"fBodyAcc-std()-Y"           	FreqBodyAcc-StdDev-Y       
-"fBodyAcc-std()-Z"           	FreqBodyAcc-StdDev-Z      
-"fBodyAccJerk-mean()-X"       	FreqBodyAccJerk-Mean-X     
-"fBodyAccJerk-mean()-Y"      	FreqBodyAccJerk-Mean-Y    
-"fBodyAccJerk-mean()-Z"       	FreqBodyAccJerk-Mean-Z     
-"fBodyAccJerk-std()-X"       	FreqBodyAccJerk-StdDev-X  
-"fBodyAccJerk-std()-Y"        	FreqBodyAccJerk-StdDev-Y   
-"fBodyAccJerk-std()-Z"       	FreqBodyAccJerk-StdDev-Z  
-"fBodyGyro-mean()-X"          	FreqBodyGyro-Mean-X        
-"fBodyGyro-mean()-Y"         	FreqBodyGyro-Mean-Y       
-"fBodyGyro-mean()-Z"         	FreqBodyGyro-Mean-Z        
-"fBodyGyro-std()-X"          	FreqBodyGyro-StdDev-X     
-"fBodyGyro-std()-Y"          	FreqBodyGyro-StdDev-Y      
-"fBodyGyro-std()-Z"         	FreqBodyGyro-StdDev-Z     
-"fBodyAccMag-mean()"         	FreqBodyAccMag-Mean        
-"fBodyAccMag-std()"         	FreqBodyAccMag-StdDev     
-"fBodyBodyAccJerkMag-mean()"  	FreqBodyAccJerkMag-Mean    
-"fBodyBodyAccJerkMag-std()"  	FreqBodyAccJerkMag-StdDev
-"fBodyBodyGyroMag-mean()"     	FreqBodyGyroMag-Mean       
-"fBodyBodyGyroMag-std()"     	FreqBodyGyroMag-StdDev    
-"fBodyBodyGyroJerkMag-mean()"	FreqBodyGyroJerkMag-Mean   
-"fBodyBodyGyroJerkMag-std()"	FreqBodyGyroJerkMag-StdDev
+**Original variable name**      **Transformed variable name**  
+subject	                        Subject                      
+activty_labels	                ActivityLabel              
+"tBodyAcc-mean()-X"            	TimeBodyAcc-Mean-X           
+"tBodyAcc-mean()-Y"       	TimeBodyAcc-Mean-Y           
+"tBodyAcc-mean()-Z"	        TimeBodyAcc-Mean-Z           
+"tBodyAcc-std()-X"          	TimeBodyAcc-StdDev-X        
+"tBodyAcc-std()-Y"            	TimeBodyAcc-StdDev-Y        
+"tBodyAcc-std()-Z"           	TimeBodyAcc-StdDev-Z        
+"tGravityAcc-mean()-X"      	TimeGravityAcc-Mean-X        
+"tGravityAcc-mean()-Y"       	TimeGravityAcc-Mean-Y       
+"tGravityAcc-mean()-Z"        	TimeGravityAcc-Mean-Z       
+"tGravityAcc-std()-X"        	TimeGravityAcc-StdDev-X     
+"tGravityAcc-std()-Y"         	TimeGravityAcc-StdDev-Y      
+"tGravityAcc-std()-Z"        	TimeGravityAcc-StdDev-Z     
+"tBodyAccJerk-mean()-X"       	TimeBodyAccJerk-Mean-X        
+"tBodyAccJerk-mean()-Y"      	TimeBodyAccJerk-Mean-Y        
+"tBodyAccJerk-mean()-Z"      	TimeBodyAccJerk-Mean-Z       
+"tBodyAccJerk-std()-X"       	TimeBodyAccJerk-StdDev-X    
+"tBodyAccJerk-std()-Y"        	TimeBodyAccJerk-StdDev-Y      
+"tBodyAccJerk-std()-Z"       	TimeBodyAccJerk-StdDev-Z     
+"tBodyGyro-mean()-X"          	TimeBodyGyro-Mean-X          
+"tBodyGyro-mean()-Y"         	TimeBodyGyro-Mean-Y         
+"tBodyGyro-mean()-Z"          	TimeBodyGyro-Mean-Z          
+"tBodyGyro-std()-X"          	TimeBodyGyro-StdDev-X       
+"tBodyGyro-std()-Y"           	TimeBodyGyro-StdDev-Y         
+"tBodyGyro-std()-Z"          	TimeBodyGyro-StdDev-Z       
+"tBodyGyroJerk-mean()-X"      	TimeBodyGyroJerk-Mean-X      
+"tBodyGyroJerk-mean()-Y"     	TimeBodyGyroJerk-Mean-Y      
+"tBodyGyroJerk-mean()-Z"      	TimeBodyGyroJerk-Mean-Z     
+"tBodyGyroJerk-std()-X"      	TimeBodyGyroJerk-StdDev-X  
+"tBodyGyroJerk-std()-Y"       	TimeBodyGyroJerk-StdDev-Y    
+"tBodyGyroJerk-std()-Z"      	TimeBodyGyroJerk-StdDev-Z  
+"tBodyAccMag-mean()"          	TimeBodyAccMag-Mean          
+"tBodyAccMag-std()"          	TimeBodyAccMag-StdDev       
+"tGravityAccMag-mean()"      	TimeGravityAccMag-Mean       
+"tGravityAccMag-std()"       	TimeGravityAccMag-StdDev    
+"tBodyAccJerkMag-mean()"      	TimeBodyAccJerkMag-Mean      
+"tBodyAccJerkMag-std()"      	TimeBodyAccJerkMag-StdDev  
+"tBodyGyroMag-mean()"         	TimeBodyGyroMag-Mean        
+"tBodyGyroMag-std()"         	TimeBodyGyroMag-StdDev      
+"tBodyGyroJerkMag-mean()"     	TimeBodyGyroJerkMag-Mean    
+"tBodyGyroJerkMag-std()"     	TimeBodyGyroJerkMag-StdDev  
+"fBodyAcc-mean()-X"	        FreqBodyAcc-Mean-X            
+"fBodyAcc-mean()-Y"          	FreqBodyAcc-Mean-Y          
+"fBodyAcc-mean()-Z"           	FreqBodyAcc-Mean-Z           
+"fBodyAcc-std()-X"           	FreqBodyAcc-StdDev-X        
+"fBodyAcc-std()-Y"           	FreqBodyAcc-StdDev-Y         
+"fBodyAcc-std()-Z"           	FreqBodyAcc-StdDev-Z        
+"fBodyAccJerk-mean()-X"       	FreqBodyAccJerk-Mean-X       
+"fBodyAccJerk-mean()-Y"      	FreqBodyAccJerk-Mean-Y      
+"fBodyAccJerk-mean()-Z"       	FreqBodyAccJerk-Mean-Z       
+"fBodyAccJerk-std()-X"       	FreqBodyAccJerk-StdDev-X    
+"fBodyAccJerk-std()-Y"        	FreqBodyAccJerk-StdDev-Y     
+"fBodyAccJerk-std()-Z"       	FreqBodyAccJerk-StdDev-Z    
+"fBodyGyro-mean()-X"          	FreqBodyGyro-Mean-X          
+"fBodyGyro-mean()-Y"         	FreqBodyGyro-Mean-Y         
+"fBodyGyro-mean()-Z"         	FreqBodyGyro-Mean-Z          
+"fBodyGyro-std()-X"          	FreqBodyGyro-StdDev-X       
+"fBodyGyro-std()-Y"          	FreqBodyGyro-StdDev-Y        
+"fBodyGyro-std()-Z"         	FreqBodyGyro-StdDev-Z       
+"fBodyAccMag-mean()"         	FreqBodyAccMag-Mean          
+"fBodyAccMag-std()"         	FreqBodyAccMag-StdDev       
+"fBodyBodyAccJerkMag-mean()"  	FreqBodyAccJerkMag-Mean      
+"fBodyBodyAccJerkMag-std()"  	FreqBodyAccJerkMag-StdDev   
+"fBodyBodyGyroMag-mean()"     	FreqBodyGyroMag-Mean         
+"fBodyBodyGyroMag-std()"     	FreqBodyGyroMag-StdDev      
+"fBodyBodyGyroJerkMag-mean()"	FreqBodyGyroJerkMag-Mean     
+"fBodyBodyGyroJerkMag-std()"	FreqBodyGyroJerkMag-StdDev  
 
