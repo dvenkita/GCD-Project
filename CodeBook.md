@@ -125,12 +125,13 @@ Abbreviations used:
 4. mag = Magnitude  
 5. Freq = Frequency  
 
+
+**Original variable name**```  ``` **Transformed variable name**  
 ```
-**Original variable name**        **Transformed variable name**  
 subject	                          Subject                      
 activty_labels	                  ActivityLabel              
 "tBodyAcc-mean()-X"               TimeBodyAcc-Mean-X           
-"tBodyAcc-mean()-Y"       	  TimeBodyAcc-Mean-Y           
+"tBodyAcc-mean()-Y"               TimeBodyAcc-Mean-Y           
 "tBodyAcc-mean()-Z"	          TimeBodyAcc-Mean-Z           
 "tBodyAcc-std()-X"            	  TimeBodyAcc-StdDev-X        
 "tBodyAcc-std()-Y"            	  TimeBodyAcc-StdDev-Y        
@@ -169,7 +170,7 @@ activty_labels	                  ActivityLabel
 "tBodyGyroMag-std()"         	  TimeBodyGyroMag-StdDev      
 "tBodyGyroJerkMag-mean()"     	  TimeBodyGyroJerkMag-Mean    
 "tBodyGyroJerkMag-std()"     	  TimeBodyGyroJerkMag-StdDev  
-"fBodyAcc-mean()-X"	          FreqBodyAcc-Mean-X            
+"fBodyAcc-mean()-X"               FreqBodyAcc-Mean-X            
 "fBodyAcc-mean()-Y"          	  FreqBodyAcc-Mean-Y          
 "fBodyAcc-mean()-Z"           	  FreqBodyAcc-Mean-Z           
 "fBodyAcc-std()-X"           	  FreqBodyAcc-StdDev-X        
