@@ -126,7 +126,7 @@ Abbreviations used:
 5. Freq = Frequency  
 
 
-**Original variable name**```               ``` **Transformed variable name**  
+**Original variable name**``` ``` ```    ``` **Transformed variable name**  
 ```
 subject	                          Subject                      
 activty_labels	                  ActivityLabel              
