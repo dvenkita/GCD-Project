@@ -102,7 +102,7 @@ tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
-** Data download**
+**Data download**   
 1. The run_analysis.R script created a directory named "Project" (if it does not 
    exist already)
 2. The current working directory is changed to "Project"
