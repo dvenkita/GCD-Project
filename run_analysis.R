@@ -28,45 +28,44 @@ unzip("UCI_HAR_dataset.zip")
 activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")[,2]
 features <- read.table("./UCI HAR Dataset/features.txt")[,2]
 
-## Extract list of variables that contain mean and standard deviation (std) 
-## measurements
-extract_features <- grepl("mean\\(\\)|std\\(\\)", features)
-
 ## Load X & Y training data sets as well as list of training data subjects
 X_train <- read.table("./UCI HAR Dataset/train/X_train.txt")
 Y_train <- read.table("./UCI HAR Dataset/train/y_train.txt")
 subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt")
-
-
-## Extract measurements on mean and std for the training data
-names(X_train) = features
-X_train = X_train[,extract_features]
-
-## Extract activity ID and activity labels for the training dataset
-Y_train[,2] = activity_labels[Y_train[,1]]
-names(Y_train) = c("Activity_ID", "Activity_Label")
-names(subject_train) = "Subject"
-
-## Combine mean & std measurement with activity ID & activity labels 
-## for training data
-train_data <- cbind(as.data.table(subject_train), Y_train, X_train)
 
 ## Load X & Y training data sets as well as list of test data subjects
 X_test <- read.table("./UCI HAR Dataset/test/X_test.txt")
 Y_test <- read.table("./UCI HAR Dataset/test/y_test.txt")
 subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt")
 
+## Extract list of variables that contain mean and standard deviation (std) 
+## measurements
+extract_features <- grepl("mean\\(\\)|std\\(\\)", features)
+
+## Extract measurements on mean and std for the training data
+names(X_train) = features
+X_train = X_train[,extract_features]
+
+## Extract activity ID, activity labels & subject ID for the training dataset
+Y_train[,2] = activity_labels[Y_train[,1]]
+names(Y_train) = c("Activity_ID", "Activity_Label")
+names(subject_train) = "Subject"
+
+## Combine mean & std measurement with activity ID, activity labels & subject 
+## ID for training data
+train_data <- cbind(as.data.table(subject_train), Y_train, X_train)
+
 ## Extract measurements on mean and std for the test data
 names(X_test) = features
 X_test = X_test[,extract_features]
 
-## Extract activity ID and activity labels for the training dataset
+## Extract activity ID, activity labels & subject ID for the test dataset
 Y_test[,2] = activity_labels[Y_test[,1]]
 names(Y_test) = c("Activity_ID", "Activity_Label")
 names(subject_test) = "Subject"
 
-## Combine mean & std measurement with activity ID & activity labels 
-## for test data
+## Combine mean & std measurement with activity ID, activity labels & subject
+## ID for test data
 test_data <- cbind(as.data.table(subject_test), Y_test, X_test)
 
 ## Merge training and test data sets
@@ -92,3 +91,5 @@ names(tidy_data) = gsub("std", "StdDev", names(tidy_data))
 ## Create a text file with tidy dataset containing average of each variable 
 ## for each activity and each subject
 write.table(tidy_data, file = "UCI_HAR_tidy_data.txt",row.name = FALSE, quote = FALSE)
+
+

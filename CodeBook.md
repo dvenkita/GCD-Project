@@ -1,7 +1,7 @@
 # GCD-Project - CodeBook
 Repository for Getting and Cleaning Data course Project
 
-**UCI Human Activity Recognition (HAR) data set**
+**UCI Human Activity Recognition (HAR) data set**    
  For detailed description on data collection and processing, please read the 
  README.txt file in the downloaded data folder.A full description is available 
  at the following site:
@@ -13,7 +13,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
  WALKING_DOWNSTAIRS, SITTING, STANDING & LAYING). The data collected was partitioned
  into training (21 subjects) and test (9 subjects) data sets. The sensor signals were processed as described in the README.txt file or on thier website.
  
-**Description of data files & units from README.txt file**
+**Description of data files & units from README.txt file**    
 The dataset includes the following files:
 - 'README.txt'
 - 'features_info.txt': Shows information about the variables used on the feature 
@@ -42,8 +42,8 @@ Notes:
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
 
-**Description of features from features_info.txt file**
-Feature Selection:
+**Description of features from features_info.txt file**     
+*Feature Selection:*   
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
@@ -109,7 +109,6 @@ The complete list of variables of each feature vector is available in 'features.
 3. The UCI HAR data set is downloaded as a zip file and the data files are
    extracted into UCI HAR Dataset folder
 
-
 **Data loading & Processing**
 ```
 1. Read the following data files      
@@ -137,6 +136,7 @@ The complete list of variables of each feature vector is available in 'features.
 9. Clean/modify the variable names of tidy_data to have descriptive names  
 10. Write the tidy_data into a text file labeled "UCI_HAR_tidy_data.txt"
 ```
+
 **Variable Names - Description**  
 Abbreviations used:   
 1. Acc = Acceleration from accelerometer   
