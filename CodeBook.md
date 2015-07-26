@@ -136,6 +136,9 @@ The complete list of variables of each feature vector is available in 'features.
 9. Clean/modify the variable names of tidy_data to have descriptive names  
 10. Write the tidy_data into a text file labeled "UCI_HAR_tidy_data.txt"
 ```
+The tidy data contains 68 columns (Subject, ActivityLabel + 66 Mean & StdDev
+variables) and 181 rows (Header + 30 subject * 6 activites = 180 measures for
+each variable)
 
 **Variable Names - Description**  
 Abbreviations used:   
